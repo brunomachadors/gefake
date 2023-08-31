@@ -20,6 +20,10 @@ button {
   padding: 9px 7px 12px;
 }
 
+.globo button:hover {
+  border-top: 3px solid rgb(86, 144, 239);
+}
+
 .g1 button {
   margin: 1px;
   color: #c4170c;
