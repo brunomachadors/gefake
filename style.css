@@ -1,0 +1,160 @@
+.header-links {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  flex-direction: row;
+  position: relative;
+  right: 30%;
+}
+
+button {
+  margin: 1px;
+  border: none;
+  font-size: 16px;
+  padding: 9px 7px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font: bold;
+}
+
+.globo button {
+  padding: 9px 7px 12px;
+}
+
+.g1 button {
+  margin: 1px;
+  color: #c4170c;
+}
+
+.g1 button:hover {
+  border-top: 3px solid #c4170c;
+}
+
+.ge button {
+  padding: 9px 7px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font: bold;
+  color: #06aa48;
+}
+
+.ge button:hover {
+  border-top: 3px solid #06aa48;
+}
+
+.gshow button {
+  margin: 1px;
+  padding: 9px 7px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font: bold;
+  color: #ff6700;
+}
+
+.gshow button:hover {
+  border-top: 3px solid #ff6700;
+}
+
+.globoplay button {
+  margin: 1px;
+  padding: 9px 7px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font: bold;
+  color: #fb0234;
+}
+
+.globoplay button:hover {
+  border-top: 3px solid #fb0234;
+}
+
+.sidebar {
+  margin: 1px;
+  padding-top: 9px;
+  font-family: Arial, Helvetica, sans-serif;
+  font: bold;
+  color: #9a9a9a;
+}
+
+.ge-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #06aa48;
+  font-size: 40px;
+  color: white;
+  font: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 75px;
+  padding: 0px 15px;
+}
+
+.ge-bar div {
+  min-width: 150px;
+}
+
+.search {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding: 0 50px;
+}
+
+.grid-news {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  grid-gap: 12px;
+  grid-template-areas:
+    'a b'
+    'a c';
+}
+
+.img1 {
+  grid-area: a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img1 img {
+  width: auto;
+  height: 100%;
+}
+
+.img2 {
+  grid-area: b;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img3 {
+  grid-area: c;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::placeholder {
+  color: white;
+  font: bold;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.croped {
+  width: 100%;
+}
