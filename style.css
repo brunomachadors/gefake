@@ -134,14 +134,21 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .img3 {
   grid-area: c;
-  width: 100%;
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
 }
 
 .img1 img {
@@ -189,8 +196,8 @@ img {
 .imgTextTitle2 {
   color: white;
   position: absolute;
-  top: 45%;
-  left: 51%;
+  top: 79%;
+  left: 3%;
   font: bold;
   font-size: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -200,8 +207,8 @@ img {
 .imgTextDescription2 {
   color: white;
   position: absolute;
-  top: 49%;
-  left: 51%;
+  top: 89%;
+  left: 4%;
   font-size: 16px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -211,8 +218,8 @@ img {
 .imgTextTitle3 {
   color: white;
   position: absolute;
-  top: 85%;
-  left: 51%;
+  top: 82%;
+  left: 4%;
   font: bold;
   font-size: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -222,8 +229,8 @@ img {
 .imgTextDescription3 {
   color: white;
   position: absolute;
-  top: 89%;
-  left: 51%;
+  top: 90%;
+  left: 4%;
   font-size: 16px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
