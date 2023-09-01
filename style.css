@@ -1,10 +1,14 @@
+html,
+body {
+  background-color: #f3f3f3;
+}
+
 .header-links {
   display: flex;
   justify-content: center;
-  background-color: #f3f3f3;
   flex-direction: row;
   position: relative;
-  right: 30%;
+  right: 18%;
 }
 
 button {
@@ -104,18 +108,18 @@ button {
   justify-content: center;
   align-items: center;
   margin: 30px auto;
-  max-width: 1200px;
+  max-width: 950px;
   padding: 0 50px;
 }
 
 .grid-news {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
-  grid-gap: 12px;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  grid-gap: 10px;
   grid-template-areas:
-    'a b'
-    'a c';
+    'a a b b'
+    'a a c c';
 }
 
 .img1 {
@@ -128,30 +132,42 @@ button {
   position: relative;
 }
 
+.img2 {
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img3 {
+  grid-area: c;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
+}
+
 .img1 img {
   width: auto;
   height: 100%;
 }
 
-.img2 {
-  grid-area: b;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.img2 img {
+  width: 100%;
+  height: auto;
 }
 
-.img3 {
-  grid-area: c;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-::placeholder {
-  color: white;
-  font: bold;
+.img3 img {
+  width: 100%;
+  height: auto;
 }
 
 img {
@@ -159,6 +175,170 @@ img {
   height: 100%;
 }
 
-.croped {
-  width: 100%;
+.imgTextTitle1 {
+  color: white;
+  position: absolute;
+  top: 83%;
+  left: 4%;
+  font: bold;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgTextDescription1 {
+  color: white;
+  position: absolute;
+  top: 88%;
+  left: 4%;
+  font-size: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imgTextTitle2 {
+  color: white;
+  position: absolute;
+  top: 79%;
+  left: 3%;
+  font: bold;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgTextDescription2 {
+  color: white;
+  position: absolute;
+  top: 89%;
+  left: 4%;
+  font-size: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imgTextTitle3 {
+  color: white;
+  position: absolute;
+  top: 82%;
+  left: 4%;
+  font: bold;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgTextDescription3 {
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 4%;
+  font-size: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::placeholder {
+  color: white;
+  font: bold;
+}
+
+.menuText {
+  font-size: 20px;
+}
+
+.pipe {
+  font-size: 20px;
+}
+
+.timesText {
+  font-size: 20px;
+}
+
+.containerNews {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 22%;
+  max-width: 950px;
+}
+
+.containerNewsLeft {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.containerTable {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 30%;
+  border: solid rgb(189, 188, 188);
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+
+  margin-top: 10px;
+}
+
+.tables {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: column;
+}
+
+.match {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.championship {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #06aa48;
+  font: bold;
+}
+
+.game {
+  margin: 10px;
+  border: solid black;
+}
+
+.firstGame {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  color: #666;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-bottom: solid gray;
+}
+
+.secondGame {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  color: #666;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.containerTeamImage {
+  max-width: 35px;
+  max-height: 35px;
+  width: auto;
+  height: auto;
+  padding: 5px;
 }
